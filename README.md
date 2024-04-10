@@ -13,3 +13,12 @@ for users in data_types:
     data_list.append(user_info)
 
 ````
+
+
+API's
+
+https://rapidapi.com/hub
+
+https://mgcconsulting.com.br/7-apis-publicas-gratis-para-desenvolvedores/
+
+https://publicapis.dev/
