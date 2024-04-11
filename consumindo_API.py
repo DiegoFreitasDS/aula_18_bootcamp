@@ -41,7 +41,7 @@ def pegar_info(id: int) -> RandonSchema:
         # data_list.append(user['location']['state'])  # Estado
         # data_list.append(user['location']['country'])  # País
         # data_list.append(user['location']['postcode'])  # Código Postal
-        types = ', '.join(data_list)
+        types = ', '.join(str(v) for v in data_list)
         return RandonSchema(type=types, 
                             nome=user['name']['first'] + " " + user['name']['last'],
                             genero=user['gender'],
@@ -56,5 +56,7 @@ def pegar_info(id: int) -> RandonSchema:
                             input_type=dict)
                             
 
-infos = pegar_info(100)
-print(infos)
+if __name__ == "__main__":
+    print(pegar_info(100))
+    # print(pegar_info(50))
+    # print(pegar_info(15))
